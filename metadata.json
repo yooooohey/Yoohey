@@ -1,0 +1,7 @@
+{
+  "name": "FishPedia PWA",
+  "description": "誰でも見れて投稿できる魚図鑑アプリ。ユーザーは魚の情報を閲覧、投稿し、お気に入りに登録できます。AI機能で海の生き物の豆知識を発見しましょう。",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
