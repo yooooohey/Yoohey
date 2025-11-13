@@ -24,7 +24,8 @@ export const FishCard: React.FC<FishCardProps> = ({ fish }) => {
       </div>
       <div className="p-4">
         <h3 className="text-lg font-semibold text-slate-800 group-hover:text-sky-600 transition-colors">{fish.name}</h3>
-        <p className="text-sm text-slate-500 italic">{fish.scientificName}</p>
+        {fish.nameEn && <p className="text-sm text-slate-500">{fish.nameEn}</p>}
+        <p className="text-sm text-slate-500 italic mt-1">{fish.scientificName}</p>
       </div>
     </Link>
   );

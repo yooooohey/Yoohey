@@ -16,7 +16,7 @@ export const HomePage: React.FC<HomePageProps> = ({ fishList }) => {
   );
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 pb-24">
       <div className="text-center">
         <h1 className="text-4xl font-bold text-sky-800">FishPediaへようこそ</h1>
         <p className="text-slate-600 mt-2">みんなでつくる、海の生き物図鑑。</p>
