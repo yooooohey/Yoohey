@@ -8,26 +8,24 @@
     <link rel="manifest" href="./manifest.json" />
     <link rel="apple-touch-icon" href="./icons/icon-192x192.png">
     <meta name="theme-color" content="#0ea5e9"/>
-  <script type="importmap">
+    <script type="importmap">
 {
   "imports": {
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.25.0",
-    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.4"
+    "react": "https://esm.sh/react@18.2.0",
+    "react/jsx-runtime": "https://esm.sh/react@18.2.0/jsx-runtime",
+    "react-dom": "https://esm.sh/react-dom@18.2.0",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+    "react-router-dom": "https://esm.sh/react-router-dom@6.22.3",
+    "@google/genai": "https://esm.sh/@google/genai",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
   }
 }
 </script>
-    <!-- ▼▼▼ ADD THIS SCRIPT ▼▼▼ -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <!-- ▲▲▲ ADD THIS SCRIPT ▲▲▲ -->
 </head>
   <body class="bg-sky-50 text-slate-800">
     <div id="root"></div>
-    <!-- ▼▼▼ CHANGE THIS LINE ▼▼▼ -->
-    <script type="text/babel" data-type="module" src="./index.tsx"></script>
-    <!-- ▲▲▲ CHANGE THIS LINE ▲▲▲ -->
+    <script type="text/babel" data-presets="react,typescript" data-type="module" src="./index.js"></script>
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
