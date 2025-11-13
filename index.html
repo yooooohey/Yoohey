@@ -19,10 +19,15 @@
   }
 }
 </script>
+    <!-- ▼▼▼ ADD THIS SCRIPT ▼▼▼ -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- ▲▲▲ ADD THIS SCRIPT ▲▲▲ -->
 </head>
   <body class="bg-sky-50 text-slate-800">
     <div id="root"></div>
-    <script type="module" src="./index.tsx"></script>
+    <!-- ▼▼▼ CHANGE THIS LINE ▼▼▼ -->
+    <script type="text/babel" data-type="module" src="./index.tsx"></script>
+    <!-- ▲▲▲ CHANGE THIS LINE ▲▲▲ -->
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
